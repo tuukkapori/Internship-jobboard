@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   position: relative;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: white;
+  @media (max-width: 500px) {
+    width: 95vw;
+  }
 `
 
 const CompanyLogo = styled.div`

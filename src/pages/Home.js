@@ -2,6 +2,21 @@ import React from 'react'
 import SearchBar from '../components/SearchBar'
 import { Link } from 'react-router-dom'
 import Button from '../misc/Button'
+import styled from 'styled-components'
+
+const HeroText = styled.h2`
+  font-size: 70px;
+  width: 700px;
+  text-align: center;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 50px;
+    width: auto;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
+`
 
 const Home = () => {
   return (
@@ -17,23 +32,15 @@ const Home = () => {
         }}
       >
         <SearchBar />
-        <h2
-          style={{
-            fontSize: '70px',
-            width: '700px',
-            textAlign: 'center',
-            color: 'white',
-            boxShadow: '1px rgba(0,0,0,0.5)',
-          }}
-        >
+        <HeroText>
           The number one platform for finding internship roles!
-        </h2>
+        </HeroText>
         <Link to="/jobs" style={{ alignSelf: 'center' }}>
           <Button
             style={{
               alignSelf: 'center',
-              fontSize: '20px',
-              padding: '25px',
+              fontSize: '18px',
+              padding: '22px',
               backgroundColor: 'green',
               marginTop: '30px',
             }}

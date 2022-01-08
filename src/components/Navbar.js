@@ -11,6 +11,19 @@ const Nav = styled.nav`
   align-items: center;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: white;
+  @media (max-width: 768px) {
+    padding: 5px;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
+`
+
+const NavbarTitle = styled.h2`
+  font-size: 30px;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `
 
 const Navbar = () => {
@@ -20,10 +33,10 @@ const Navbar = () => {
         to="/"
         style={{ color: 'black', textDecoration: 'none', textShadow: 'black' }}
       >
-        <h1>Internships</h1>
+        <NavbarTitle>Internships</NavbarTitle>
       </Link>
       <Link to="/newjob">
-        <Button>Create a new job post</Button>
+        <Button>Post a job</Button>
       </Link>
     </Nav>
   )

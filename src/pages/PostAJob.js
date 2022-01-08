@@ -10,6 +10,9 @@ const Input = styled.input`
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 0px 5px;
+  @media (max-width: 500px) {
+    width: 90vw;
+  }
 `
 
 const JobDescription = styled.textarea`
@@ -19,6 +22,10 @@ const JobDescription = styled.textarea`
   border-radius: 5px;
   padding: 0px 5px;
   resize: none;
+
+  @media (max-width: 500px) {
+    width: 90vw;
+  }
 `
 
 const PostAJob = () => {
@@ -63,7 +70,6 @@ const PostAJob = () => {
         alignItems: 'center',
       }}
     >
-      <h1>Post a new job</h1>
       <form
         onSubmit={handleSubmit}
         style={{
@@ -71,10 +77,12 @@ const PostAJob = () => {
           flexDirection: 'column',
           background: 'white',
           padding: '20px',
+          marginTop: '20px',
           borderRadius: '20px',
           boxShadow: '0px 0px 4px 4px rgba(0, 0, 0, 0.05)',
         }}
       >
+        <h1>Post a new job</h1>
         <div>
           <h3>Basic information</h3>
           <label>

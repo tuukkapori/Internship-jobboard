@@ -6,6 +6,15 @@ import SearchBar from '../components/SearchBar'
 import axios from 'axios'
 import CreateNewJob from '../components/CreateNewJob'
 import { baseURL } from '../baseURL'
+import styled from 'styled-components'
+
+const SearchStatus = styled.h3`
+  display: block;
+  padding-left: 25px;
+  @media (max-width: 500px) {
+    font-size: 13px;
+  }
+`
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([])
@@ -51,31 +60,41 @@ const Jobs = () => {
   }, [searchParams.get('search')])
 
   return (
-    <div>
+    <div style={{ width: '100vw', minHeight: '100vh' }}>
       <SearchBar />
       <div></div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <MainView>
         <div>
-          <h3 style={{ textAlign: 'center' }}>
+          <SearchStatus>
             {searchParams.get('search')
-              ? `Showing results: ${searchParams.get('search')} (${jobs.length}
-          ${jobs.length === 1 ? 'match' : 'matches'})`
+              ? `Showing results: ${searchParams.get('search')}`
               : 'Showing all jobs'}
-          </h3>
+          </SearchStatus>
           <JobList jobs={formattedJobs()} />
         </div>
-        <div
-          style={{
-            position: 'sticky',
-            top: '40px',
-            alignSelf: 'flex-start',
-          }}
-        >
+        <PopupView>
           {openBigCard ? <BigJobCard jobs={jobs} /> : <CreateNewJob />}
-        </div>
-      </div>
+        </PopupView>
+      </MainView>
     </div>
   )
 }
 
 export default Jobs
+
+const MainView = styled.div`
+  display: flex;
+  justify-content: center;
+  @media (max-width: 500px) {
+    max-width: 100vw;
+  }
+`
+
+const PopupView = styled.div`
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+  @media (max-width: 500px) {
+    display: none;
+  }
+`
