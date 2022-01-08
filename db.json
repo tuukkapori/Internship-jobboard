@@ -1,0 +1,65 @@
+{
+    "jobs": [
+        {
+            "jobTitle": "Software Engineer trainee",
+            "company": "YourFavoriteCompany",
+            "shortDesc": "We are looking for aspiring software engineers to join us this summer",
+            "description": "lorem ipsum",
+            "requirements": "bachelors degree in progress",
+            "date": "21.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 68882342
+        },
+        {
+            "jobTitle": "Finance trainee",
+            "company": "FavoriteFinanceCompany",
+            "shortDesc": "Looking for finance enthusiasts to join us",
+            "description": "lorem ipsum",
+            "requirements": "masters degree in progress",
+            "date": "1.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 92371234
+        },
+        {
+            "jobTitle": "Legal intern",
+            "company": "Law company",
+            "shortDesc": "Make a positive impact this summer!",
+            "description": "lorem",
+            "requirements": "bachelors degree in law",
+            "date": "15.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 942713412
+        },
+        {
+            "jobTitle": "Marketing intern",
+            "company": "Best marketing agency",
+            "shortDesc": "Ready to take your marketing skills to next level? Apply now!",
+            "description": "lorem ipsum",
+            "requirements": "bachlelors degree in marketing or similar",
+            "date": "2.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 3414534214
+        },
+        {
+            "jobTitle": "Digital design internship",
+            "company": "YourFavoriteCompany",
+            "shortDesc": "Join the best design company next summer",
+            "description": "lorem ipsum",
+            "requirements": "Bachelors in digital design or similar",
+            "date": "25.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 98623412341
+        },
+        {
+            "jobTitle": "Product manager internship",
+            "company": "YourFavoriteCompany",
+            "shortDesc": "Want to become a PM? This is your chance",
+            "description": "lorem ipsum",
+            "requirements": "bachelors in tech or similar",
+            "date": "3.1.2022",
+            "picture": "https://www.dmcl.ca/wp-content/uploads/2019/04/Late-Filling-Corporate-Return.gif",
+            "id": 12345678
+            
+        }
+    ]
+}
